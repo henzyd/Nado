@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <div
       id="NavBar"
-      className=" w-full flex justify-between items-center border-b border-NavBar px-6 mb-4"
+      className=" w-full flex justify-between items-center border-b border-NavBar px-12 mb-4"
     >
       <Logo />
 

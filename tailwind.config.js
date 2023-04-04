@@ -6,6 +6,10 @@ export default {
       borderColor: {
         NavBar: "#0000004D",
       },
+      backgroundColor: {
+        Button: "#B6B6B6",
+        HomeIntro: "#949494",
+      },
     },
   },
   plugins: [],
