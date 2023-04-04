@@ -1,22 +1,43 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Dashboard, Home } from "./Pages";
-import HomeLayout from "./components/Layouts/HomeLayout";
-import DashboardLayout from "./components/Layouts/DashboardLayout";
+import { Buy, Dashboard, Home, Sell } from "./Pages";
+import HomeLayout from "./Layouts/HomeLayout";
+import DashboardLayout from "./Layouts/DashboardLayout";
+import LazyLoader from "./components/LazyLoader";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route
-          path="/"
-          element={
-            <HomeLayout>
-              <Home />
-            </HomeLayout>
-          }
-        />
+        <Route element={<HomeLayout />}>
+          <Route
+            path="/"
+            index
+            element={
+              <Suspense fallback={<LazyLoader />}>
+                <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/buy"
+            element={
+              <Suspense fallback={<LazyLoader />}>
+                <Buy />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/sell"
+            element={
+              <Suspense fallback={<LazyLoader />}>
+                <Sell />
+              </Suspense>
+            }
+          />
+        </Route>
+
         <Route
           path="/dashboard"
           element={
