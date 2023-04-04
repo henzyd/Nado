@@ -12,6 +12,7 @@ export default {
       },
       gridTemplateColumns: {
         HomeIntroSearch: "1fr 0.1fr 1fr 0.5fr",
+        HomeSlider: `repeat(auto-fill, minmax(100px, 1fr))`,
       },
     },
   },

@@ -6,3 +6,13 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+#Home-Slider {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#Home-Slider::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
