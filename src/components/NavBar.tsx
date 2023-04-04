@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const navData = [
@@ -15,11 +15,15 @@ const NavBar = () => {
       link: "/sell",
     },
   ];
+
   return (
-    <div id="NavBar" className=" w-full flex justify-between items-center">
+    <div
+      id="NavBar"
+      className=" w-full flex justify-between items-center border-b border-NavBar px-6 mb-4"
+    >
       <Logo />
 
-      <div>
+      <div className=" flex items-center gap-9">
         {navData.map((item) => (
           <NavLink key={item.id} to={item.link}>
             {item.name}
@@ -27,7 +31,10 @@ const NavBar = () => {
         ))}
       </div>
 
-      <div></div>
+      <div className=" flex items-center gap-9">
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Signup</Link>
+      </div>
     </div>
   );
 };
