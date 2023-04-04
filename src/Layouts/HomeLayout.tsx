@@ -1,11 +1,12 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import { Outlet } from "react-router-dom";
 
-const HomeLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const HomeLayout = () => {
   return (
     <div>
       <NavBar />
-      {children}
+      <Outlet />
     </div>
   );
 };
