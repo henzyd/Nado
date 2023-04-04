@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Dashboard, Home } from "./Pages";
-import HomeLayout from "./components/Layouts/HomeLayout";
-import DashboardLayout from "./components/Layouts/DashboardLayout";
+import HomeLayout from "./Layouts/HomeLayout";
+import DashboardLayout from "./Layouts/DashboardLayout";
 
 function App() {
   return (
