@@ -10,6 +10,9 @@ export default {
         Button: "#B6B6B6",
         HomeIntro: "#949494",
       },
+      gridTemplateColumns: {
+        HomeIntroSearch: "1fr 0.1fr 1fr 0.5fr",
+      },
     },
   },
   plugins: [],
