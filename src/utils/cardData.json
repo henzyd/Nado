@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Bacon Lorem ipsum",
+    "image": "",
+    "new": true,
+    "price": 1000,
+    "discount": -92,
+    "previousPrice": 10000
+  },
+  {
+    "id": 2,
+    "title": "Pork Ribs Lorem ipsum",
+    "image": "",
+    "new": false,
+    "price": 500,
+    "discount": -98,
+    "previousPrice": 12000
+  },
+  {
+    "id": 3,
+    "title": "Pork Tenderloin Lorem ips...",
+    "image": "",
+    "new": true,
+    "price": 500
+  },
+  {
+    "id": 4,
+    "title": "Beef Tenderloin",
+    "image": "",
+    "new": false,
+    "price": 1500,
+    "discount": -20,
+    "previousPrice": 1900
+  },
+  {
+    "id": 5,
+    "title": "Chicken Thighs",
+    "image": "",
+    "new": true,
+    "price": 400
+  },
+  {
+    "id": 6,
+    "title": "Salmon Steak",
+    "image": "",
+    "new": false,
+    "price": 1000
+  },
+  {
+    "id": 7,
+    "title": "Lamb Leg",
+    "image": "",
+    "new": false,
+    "price": 1200,
+    "discount": -10,
+    "previousPrice": 1350
+  },
+  {
+    "id": 8,
+    "title": "Ground Beef",
+    "image": "",
+    "new": true,
+    "price": 800
+  },
+  {
+    "id": 9,
+    "title": "Pork Chops",
+    "image": "",
+    "new": false,
+    "price": 700
+  },
+  {
+    "id": 10,
+    "title": "Ribeye Steak",
+    "image": "",
+    "new": true,
+    "price": 2000
+  }
+]
