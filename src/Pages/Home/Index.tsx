@@ -1,3 +1,4 @@
+import Advert from "./Advert";
 import Intro from "./Intro";
 import Slider from "./Slider";
 import TopItems from "./TopItems";
@@ -8,6 +9,7 @@ const Home = () => {
       <Intro />
       <Slider />
       <TopItems />
+      <Advert />
     </div>
   );
 };
